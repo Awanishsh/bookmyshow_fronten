@@ -37,7 +37,7 @@ function Home() {
 
     try {
       const response = await axios.post(
-        "https://bookmyshow-backend-uxqr.onrender.com/api/booking",
+        "https://bookmyshow-backend-o9r5.onrender.com/api/booking",
         bookingData
       );
       toast.success("Booking successful!");
@@ -50,7 +50,7 @@ function Home() {
     const fetchLastBooking = async () => {
       try {
         const response = await axios.get(
-          "https://bookmyshow-backend-uxqr.onrender.com/api/lastbooking"
+          "https://bookmyshow-backend-o9r5.onrender.com/api/lastbooking"
         );
         setLastBooking(response.data);
         console.log(response.data);
