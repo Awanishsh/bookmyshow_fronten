@@ -10,7 +10,7 @@ module.exports = {
     devServer: {
         proxy: {
             '/api/**': {
-                target: 'http://localhost:8080/',
+                target: 'https://bookmyshow-backend-o9r5.onrender.com/',
                 secure: false,
                 changeOrigin: true
             }
